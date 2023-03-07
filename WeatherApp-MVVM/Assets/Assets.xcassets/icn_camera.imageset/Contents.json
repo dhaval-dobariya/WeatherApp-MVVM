@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "5740099_camera_image_movie_photo_photography_icon (1) copy-1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "5740099_camera_image_movie_photo_photography_icon (1).png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "5740099_camera_image_movie_photo_photography_icon (1) copy-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

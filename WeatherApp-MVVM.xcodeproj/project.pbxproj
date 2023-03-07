@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F50A7A429B7361E001B79C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F50A7A329B7361E001B79C9 /* GoogleService-Info.plist */; };
+		222FD6F329B6FC870004AB3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FD6F229B6FC870004AB3B /* AppDelegate.swift */; };
+		222FD6F529B6FC870004AB3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FD6F429B6FC870004AB3B /* SceneDelegate.swift */; };
+		222FD6FA29B6FC870004AB3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222FD6F829B6FC870004AB3B /* Main.storyboard */; };
+		222FD6FC29B6FC890004AB3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222FD6FB29B6FC890004AB3B /* Assets.xcassets */; };
+		222FD6FF29B6FC890004AB3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222FD6FD29B6FC890004AB3B /* LaunchScreen.storyboard */; };
+		222FD70929B6FCED0004AB3B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FD70829B6FCED0004AB3B /* SignUpVC.swift */; };
+		222FD70B29B6FCFF0004AB3B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FD70A29B6FCFF0004AB3B /* SignInVC.swift */; };
+		222FD71029B6FD5C0004AB3B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FD70F29B6FD5C0004AB3B /* HomeVC.swift */; };
+		222FD71329B704BB0004AB3B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 222FD71229B704BB0004AB3B /* FirebaseAnalytics */; };
+		222FD71529B704BB0004AB3B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 222FD71429B704BB0004AB3B /* FirebaseAuth */; };
+		222FD71A29B7071B0004AB3B /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FD71929B7071B0004AB3B /* SignUpVM.swift */; };
+		222FD71C29B707360004AB3B /* SignInVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FD71B29B707360004AB3B /* SignInVM.swift */; };
+		222FD71E29B707400004AB3B /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FD71D29B707400004AB3B /* HomeVM.swift */; };
+		222FD72229B708970004AB3B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FD72129B708970004AB3B /* UIViewController+Extensions.swift */; };
+		222FD72529B70EC70004AB3B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 222FD72429B70EC70004AB3B /* IQKeyboardManagerSwift */; };
+		2288743329B720D70093E29A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2288743229B720D70093E29A /* AuthManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F50A7A329B7361E001B79C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		222FD6EF29B6FC870004AB3B /* WeatherApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeatherApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		222FD6F229B6FC870004AB3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		222FD6F429B6FC870004AB3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		222FD6F929B6FC870004AB3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		222FD6FB29B6FC890004AB3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		222FD6FE29B6FC890004AB3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		222FD70029B6FC890004AB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222FD70829B6FCED0004AB3B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		222FD70A29B6FCFF0004AB3B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		222FD70F29B6FD5C0004AB3B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		222FD71929B7071B0004AB3B /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
+		222FD71B29B707360004AB3B /* SignInVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVM.swift; sourceTree = "<group>"; };
+		222FD71D29B707400004AB3B /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		222FD72129B708970004AB3B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2288743229B720D70093E29A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		222FD6EC29B6FC870004AB3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222FD71329B704BB0004AB3B /* FirebaseAnalytics in Frameworks */,
+				222FD71529B704BB0004AB3B /* FirebaseAuth in Frameworks */,
+				222FD72529B70EC70004AB3B /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F50A7A529B736ED001B79C9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				222FD6F829B6FC870004AB3B /* Main.storyboard */,
+				222FD6FB29B6FC890004AB3B /* Assets.xcassets */,
+				222FD6FD29B6FC890004AB3B /* LaunchScreen.storyboard */,
+				222FD70029B6FC890004AB3B /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		222FD6E629B6FC870004AB3B = {
+			isa = PBXGroup;
+			children = (
+				222FD6F129B6FC870004AB3B /* WeatherApp-MVVM */,
+				222FD6F029B6FC870004AB3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		222FD6F029B6FC870004AB3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				222FD6EF29B6FC870004AB3B /* WeatherApp-MVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		222FD6F129B6FC870004AB3B /* WeatherApp-MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				2288743129B720C70093E29A /* CustomClasses */,
+				222FD71F29B7083F0004AB3B /* Utilities */,
+				222FD71829B705A80004AB3B /* Models */,
+				222FD70729B6FCB90004AB3B /* ViewControllers */,
+				222FD70629B6FCA30004AB3B /* AppDelegates */,
+				0F50A7A529B736ED001B79C9 /* Assets */,
+				0F50A7A329B7361E001B79C9 /* GoogleService-Info.plist */,
+			);
+			path = "WeatherApp-MVVM";
+			sourceTree = "<group>";
+		};
+		222FD70629B6FCA30004AB3B /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				222FD6F229B6FC870004AB3B /* AppDelegate.swift */,
+				222FD6F429B6FC870004AB3B /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		222FD70729B6FCB90004AB3B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				222FD70E29B6FD3F0004AB3B /* HomeScreen */,
+				222FD70D29B6FD360004AB3B /* SignInScreen */,
+				222FD70C29B6FD1D0004AB3B /* SignUpScreen */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		222FD70C29B6FD1D0004AB3B /* SignUpScreen */ = {
+			isa = PBXGroup;
+			children = (
+				222FD70829B6FCED0004AB3B /* SignUpVC.swift */,
+				222FD71929B7071B0004AB3B /* SignUpVM.swift */,
+			);
+			path = SignUpScreen;
+			sourceTree = "<group>";
+		};
+		222FD70D29B6FD360004AB3B /* SignInScreen */ = {
+			isa = PBXGroup;
+			children = (
+				222FD70A29B6FCFF0004AB3B /* SignInVC.swift */,
+				222FD71B29B707360004AB3B /* SignInVM.swift */,
+			);
+			path = SignInScreen;
+			sourceTree = "<group>";
+		};
+		222FD70E29B6FD3F0004AB3B /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				222FD70F29B6FD5C0004AB3B /* HomeVC.swift */,
+				222FD71D29B707400004AB3B /* HomeVM.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		222FD71829B705A80004AB3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		222FD71F29B7083F0004AB3B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				222FD72029B7088E0004AB3B /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		222FD72029B7088E0004AB3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				222FD72129B708970004AB3B /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2288743129B720C70093E29A /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2288743229B720D70093E29A /* AuthManager.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		222FD6EE29B6FC870004AB3B /* WeatherApp-MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222FD70329B6FC890004AB3B /* Build configuration list for PBXNativeTarget "WeatherApp-MVVM" */;
+			buildPhases = (
+				222FD6EB29B6FC870004AB3B /* Sources */,
+				222FD6EC29B6FC870004AB3B /* Frameworks */,
+				222FD6ED29B6FC870004AB3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WeatherApp-MVVM";
+			packageProductDependencies = (
+				222FD71229B704BB0004AB3B /* FirebaseAnalytics */,
+				222FD71429B704BB0004AB3B /* FirebaseAuth */,
+				222FD72429B70EC70004AB3B /* IQKeyboardManagerSwift */,
+			);
+			productName = iWeather;
+			productReference = 222FD6EF29B6FC870004AB3B /* WeatherApp-MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		222FD6E729B6FC870004AB3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					222FD6EE29B6FC870004AB3B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 222FD6EA29B6FC870004AB3B /* Build configuration list for PBXProject "WeatherApp-MVVM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 222FD6E629B6FC870004AB3B;
+			packageReferences = (
+				222FD71129B704BB0004AB3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				222FD72329B70EC70004AB3B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 222FD6F029B6FC870004AB3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				222FD6EE29B6FC870004AB3B /* WeatherApp-MVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		222FD6ED29B6FC870004AB3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222FD6FF29B6FC890004AB3B /* LaunchScreen.storyboard in Resources */,
+				0F50A7A429B7361E001B79C9 /* GoogleService-Info.plist in Resources */,
+				222FD6FC29B6FC890004AB3B /* Assets.xcassets in Resources */,
+				222FD6FA29B6FC870004AB3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		222FD6EB29B6FC870004AB3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222FD70929B6FCED0004AB3B /* SignUpVC.swift in Sources */,
+				222FD6F329B6FC870004AB3B /* AppDelegate.swift in Sources */,
+				222FD71029B6FD5C0004AB3B /* HomeVC.swift in Sources */,
+				222FD71E29B707400004AB3B /* HomeVM.swift in Sources */,
+				222FD72229B708970004AB3B /* UIViewController+Extensions.swift in Sources */,
+				222FD71C29B707360004AB3B /* SignInVM.swift in Sources */,
+				222FD6F529B6FC870004AB3B /* SceneDelegate.swift in Sources */,
+				222FD71A29B7071B0004AB3B /* SignUpVM.swift in Sources */,
+				222FD70B29B6FCFF0004AB3B /* SignInVC.swift in Sources */,
+				2288743329B720D70093E29A /* AuthManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		222FD6F829B6FC870004AB3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222FD6F929B6FC870004AB3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		222FD6FD29B6FC890004AB3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222FD6FE29B6FC890004AB3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		222FD70129B6FC890004AB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		222FD70229B6FC890004AB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		222FD70429B6FC890004AB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B78B3MC8TH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WeatherApp-MVVM/Assets/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weatherapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		222FD70529B6FC890004AB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B78B3MC8TH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WeatherApp-MVVM/Assets/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weatherapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		222FD6EA29B6FC870004AB3B /* Build configuration list for PBXProject "WeatherApp-MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222FD70129B6FC890004AB3B /* Debug */,
+				222FD70229B6FC890004AB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		222FD70329B6FC890004AB3B /* Build configuration list for PBXNativeTarget "WeatherApp-MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222FD70429B6FC890004AB3B /* Debug */,
+				222FD70529B6FC890004AB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		222FD71129B704BB0004AB3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		222FD72329B70EC70004AB3B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		222FD71229B704BB0004AB3B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 222FD71129B704BB0004AB3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		222FD71429B704BB0004AB3B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 222FD71129B704BB0004AB3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		222FD72429B70EC70004AB3B /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 222FD72329B70EC70004AB3B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 222FD6E729B6FC870004AB3B /* Project object */;
+}
