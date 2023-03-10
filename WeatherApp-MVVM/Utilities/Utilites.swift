@@ -10,6 +10,8 @@ import Foundation
 import Photos
 
 
+/// Get app root window
+/// - Returns: Scene UIWindow
 func getDeleteWindow() -> UIWindow? {
     let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
     if let sceneDelegate = windowScene?.delegate as? SceneDelegate {
@@ -31,6 +33,14 @@ func SHOW_INTERNET_ALERT() {
 
 let INTERNET_MESSAGE:String = "Please check your internet connection and try again."
 
+/// Show weather app alert
+/// - Parameters:
+///   - vc: parent view controller for presented UIAlertController
+///   - title: Specify alert title
+///   - message: Specify alert description info
+///   - buttons: Array of button names
+///   - completion: Buttons tapped completion handel with associated index value
+/// - Returns: Nathing
 func showAlertWithTitleFromVC(vc:UIViewController, title:String, andMessage message:String, buttons:[String], completion:((_ index:Int) -> Void)!) -> Void {
     
     var newMessage = message
@@ -62,6 +72,10 @@ enum MedialType: Int {
     case camera
 }
 
+/// Check permistion of other app media
+/// - Parameters:
+///   - type: Photo pick of specific app like photo library or camera
+///   - completion: Permission granted to completion handler
 func checkMediaPermition(type: MedialType, completion:(() -> Void)?) {
     switch type {
     
@@ -102,6 +116,8 @@ func checkMediaPermition(type: MedialType, completion:(() -> Void)?) {
     }
 }
 
+/// Alert for user denie permistion of open app
+/// - Parameter type: Photo pick of specific app like photo library or camera
 func showSettingAlert(_ type: MedialType) {
     guard let window = getDeleteWindow()  else {
         return

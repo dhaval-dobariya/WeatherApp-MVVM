@@ -44,7 +44,7 @@ class WeatherDetailsVC: UIViewController {
     //MARK: - IBAction
     
     @IBAction func BackButton_Tapped(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        self.goBack()
     }
     
 

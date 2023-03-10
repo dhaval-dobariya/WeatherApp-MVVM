@@ -383,6 +383,11 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Search">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="SearchButton_Tapped:" destination="WaK-yb-vnJ" eventType="touchUpInside" id="TPm-oQ-SGS"/>
                                         </connections>
@@ -425,10 +430,10 @@
                             <constraint firstItem="qUe-5D-hN0" firstAttribute="top" secondItem="KIP-pN-jjF" secondAttribute="bottom" constant="10" id="fQK-uG-O6z"/>
                             <constraint firstItem="NZv-et-sls" firstAttribute="top" secondItem="qUe-5D-hN0" secondAttribute="bottom" constant="20" id="gEb-Al-jAG"/>
                             <constraint firstItem="G51-xC-fsx" firstAttribute="centerX" secondItem="15U-rg-xK1" secondAttribute="centerX" id="gkc-n7-UCI"/>
-                            <constraint firstItem="NZv-et-sls" firstAttribute="leading" secondItem="kqo-br-iFl" secondAttribute="leading" id="ikM-JX-7GX"/>
-                            <constraint firstAttribute="bottom" secondItem="NZv-et-sls" secondAttribute="bottom" id="nFT-bB-Fjl"/>
-                            <constraint firstItem="kqo-br-iFl" firstAttribute="trailing" secondItem="NZv-et-sls" secondAttribute="trailing" id="uQT-Ng-Vbd"/>
+                            <constraint firstAttribute="bottom" secondItem="NZv-et-sls" secondAttribute="bottom" id="mUq-QJ-da9"/>
+                            <constraint firstAttribute="trailing" secondItem="NZv-et-sls" secondAttribute="trailing" id="uQT-Ng-Vbd"/>
                             <constraint firstItem="KIP-pN-jjF" firstAttribute="top" secondItem="kqo-br-iFl" secondAttribute="top" constant="10" id="yRg-4g-cDz"/>
+                            <constraint firstItem="NZv-et-sls" firstAttribute="leading" secondItem="15U-rg-xK1" secondAttribute="leading" id="zoS-pN-xXp"/>
                         </constraints>
                     </view>
                     <connections>

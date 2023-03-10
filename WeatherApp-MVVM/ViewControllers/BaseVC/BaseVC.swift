@@ -19,7 +19,7 @@ class BaseVC: UIViewController {
     }
     
     
-    // show loader
+    /// show loader
     func showActivityIndicator() {
         let size = CGSize(width: 50, height:50)
         let frame = CGRect(origin: CGPoint(x: 3, y: 3), size: size)
@@ -37,7 +37,7 @@ class BaseVC: UIViewController {
     }
     
     
-    // hide loader
+    /// hide loader
     func hideActivityIndicator() {
         self.activityIndicatorView?.removeFromSuperview()
         self.activityIndicatorView = nil

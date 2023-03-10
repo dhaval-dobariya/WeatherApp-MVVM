@@ -36,7 +36,6 @@ class AIServiceManager: NSObject {
         }
         
         var  headers: HTTPHeaders? = nil
-        var parameter = params
         if headersRequired {
             headers = [
                 "Accept": "application/json"

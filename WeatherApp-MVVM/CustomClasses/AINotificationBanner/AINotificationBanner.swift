@@ -32,13 +32,6 @@ class AINotificationBanner {
         banner?.show(bannerPosition: .top)
     }
     
-    /// Show top notification banner
-    /// - Parameter message: show message in bannner
-    func notification(message: String) {
-        banner?.dismiss()
-        banner = NotificationBanner(title: "", subtitle: message, style: .info, colors: CustomBannerColors())
-        banner?.show(bannerPosition: .top)
-    }
 }
 
 class CustomBannerColors: BannerColorsProtocol {

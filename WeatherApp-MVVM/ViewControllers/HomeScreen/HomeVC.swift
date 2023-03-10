@@ -64,7 +64,7 @@ class HomeVC: BaseVC {
                 break
                 
             case .error(let message):
-                AlertBanner.notification(message: message)
+                AlertBanner.failer(message: message)
                 break
             }
         }

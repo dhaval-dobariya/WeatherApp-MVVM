@@ -39,7 +39,7 @@ class SignInVC: BaseVC {
                 self?.hideActivityIndicator()
                 
             case .error(message: let message):
-                AlertBanner.notification(message: message)
+                AlertBanner.failer(message: message)
             }
         }
         

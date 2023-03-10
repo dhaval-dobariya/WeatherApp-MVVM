@@ -48,7 +48,7 @@ class SignUpVC: BaseVC {
                 self?.hideActivityIndicator()
                 
             case .error(message: let message):
-                AlertBanner.notification(message: message)
+                AlertBanner.failer(message: message)
             }
         }
         
@@ -62,7 +62,7 @@ class SignUpVC: BaseVC {
     //MARK: - IBAction
     
     @IBAction func LoginButton_Tapped(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        self.goBack()
     }
     
     @IBAction func SignupButton_Tapped(_ sender: UIButton) {

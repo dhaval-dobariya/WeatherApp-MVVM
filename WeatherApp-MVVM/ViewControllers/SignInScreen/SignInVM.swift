@@ -13,6 +13,10 @@ class SignInVM: BaseViewModel {
     
     //MARK: - Api call
     
+    /// User credetional throught auth login in firebase
+    /// - Parameters:
+    ///   - email: User unique emial
+    ///   - password: User password with associath email
     func loginUser(email:String, password: String) {
         self.changeHandler?(.loaderStart)
         AIAuthManager.share.loginUser(email: email, password: password) { uid, error in
@@ -26,6 +30,8 @@ class SignInVM: BaseViewModel {
         }
     }
     
+    /// Get user information from firebase
+    /// - Parameter uid: Unique indetify of user
     fileprivate func getUserInfo(uid:String?) {
         FirestoreManager.share.getUserData(loginId: uid ?? "") { (data, error) in
             AIUser.shared = AIUser(dict: data)
