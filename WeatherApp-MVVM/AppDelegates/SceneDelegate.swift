@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  WeatherApp-MVVM
 //
-//  Created by Dhaval Dobariya on 07/03/23.
+//  Created by Dhaval Dobariya on 09/03/23.
 //
 
 import UIKit
@@ -10,7 +10,6 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

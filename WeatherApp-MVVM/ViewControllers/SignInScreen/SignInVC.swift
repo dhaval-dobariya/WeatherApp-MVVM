@@ -2,12 +2,12 @@
 //  SignInVC.swift
 //  WeatherApp-MVVM
 //
-//  Created by Dhaval Dobariya on 07/03/23.
+//  Created by Dhaval Dobariya on 09/03/23.
 //
 
 import UIKit
 
-class SignInVC: UIViewController {
+class SignInVC: BaseVC {
     
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
@@ -17,28 +17,40 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setup()
+        setupUI()
         setupViewModel()
     }
     
     //MARK: - Methods
     
-    func setup() {
+    /// To setup UIs for this screen
+    private func setupUI() {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    func setupViewModel() {
+    /// to setup view-model for completon APIs
+    private func setupViewModel() {
+        viewModel.changeHandler = { [weak self] change in
+            switch change {
+            case .loaderStart:
+                self?.showActivityIndicator()
+                
+            case .loaderEnd:
+                self?.hideActivityIndicator()
+                
+            case .error(message: let message):
+                AlertBanner.notification(message: message)
+            }
+        }
+        
         viewModel.successSignin = { [weak self] in
             self?.openHomeVC()
         }
         
-        viewModel.failSignin = { [weak self] message in
-            print("fail signin: ",message)
-        }
     }
     
     
-    //MARK: - Action
+    //MARK: - IBAction
     
     @IBAction func LoginButton_Tapped(_ sender: UIButton) {
         self.view.endEditing(true)
@@ -53,15 +65,16 @@ class SignInVC: UIViewController {
     }
     
     
-    // validation
-    
+    /// Check user inputed data are not empty
     func checkValidation() -> Bool {
         var isValid: Bool = true
         
         if let tex = emailTextfield.text, tex.isEmpty {
+            viewModel.changeHandler?(.error(message: Message.Validation.InValidEmail))
             isValid = false
         
         } else if let tex = passwordTextfield.text, tex.isEmpty {
+            viewModel.changeHandler?(.error(message: Message.Validation.emptyPassword))
             isValid = false
             
         }
